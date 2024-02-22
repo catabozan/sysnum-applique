@@ -1,0 +1,326 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan  2 18:31:25 2024
+# Process ID: 79380
+# Current directory: P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.runs/synth_1
+# Command line: vivado.exe -log nanoControleur.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nanoControleur.tcl
+# Log file: P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.runs/synth_1/nanoControleur.vds
+# Journal file: P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source nanoControleur.tcl -notrace
+Command: synth_design -top nanoControleur -part xc7a35tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 59756
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.617 ; gain = 11.152
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nanoControleur' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd:42]
+INFO: [Synth 8-3491] module 'nanoProcesseur' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd:27' bound to instance 'nPr_inst' of component 'nanoProcesseur' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'nanoProcesseur' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd:44]
+INFO: [Synth 8-3491] module 'Sequenceur' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Sequenceur.vhd:27' bound to instance 'Seq_inst' of component 'Sequenceur' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'Sequenceur' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Sequenceur.vhd:48]
+INFO: [Synth 8-226] default block is never used [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Sequenceur.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'Sequenceur' (1#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Sequenceur.vhd:48]
+INFO: [Synth 8-3491] module 'Program_Counter' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Program_Counter.vhd:27' bound to instance 'PC_inst' of component 'Program_Counter' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'Program_Counter' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Program_Counter.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Program_Counter' (2#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Program_Counter.vhd:42]
+INFO: [Synth 8-3491] module 'Instruction_Register' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Instruction_Register.vhd:27' bound to instance 'IR_inst' of component 'Instruction_Register' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Register' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Instruction_Register.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Register' (3#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Instruction_Register.vhd:42]
+INFO: [Synth 8-3491] module 'Operandes_Multiplexer' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Operandes_Multiplexer.vhd:27' bound to instance 'OM_inst' of component 'Operandes_Multiplexer' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'Operandes_Multiplexer' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Operandes_Multiplexer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Operandes_Multiplexer' (4#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Operandes_Multiplexer.vhd:42]
+INFO: [Synth 8-3491] module 'ALU' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/ALU.vhd:27' bound to instance 'ALU_inst' of component 'ALU' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'ALU' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/ALU.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (5#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/ALU.vhd:42]
+INFO: [Synth 8-3491] module 'Status_Register' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Status_Register.vhd:27' bound to instance 'SR_inst' of component 'Status_Register' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'Status_Register' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Status_Register.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Status_Register' (6#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Status_Register.vhd:41]
+INFO: [Synth 8-3491] module 'W_Register' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/W_Register.vhd:27' bound to instance 'WR_inst' of component 'W_Register' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'W_Register' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/W_Register.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'W_Register' (7#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/W_Register.vhd:42]
+INFO: [Synth 8-3491] module 'Operandes_Register' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Operandes_Register.vhd:27' bound to instance 'OR_inst' of component 'Operandes_Register' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'Operandes_Register' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Operandes_Register.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Operandes_Register' (8#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Operandes_Register.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'nanoProcesseur' (9#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd:44]
+INFO: [Synth 8-3491] module 'ROM' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/ROM.vhd:27' bound to instance 'ROM_inst' of component 'ROM' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'ROM' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/ROM.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (10#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/ROM.vhd:38]
+INFO: [Synth 8-3491] module 'Data_Multiplexer' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Data_Multiplexer.vhd:27' bound to instance 'Data_Mux_inst' of component 'Data_Multiplexer' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'Data_Multiplexer' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Data_Multiplexer.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Data_Multiplexer' (11#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Data_Multiplexer.vhd:43]
+INFO: [Synth 8-3491] module 'RAM' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/RAM.vhd:27' bound to instance 'RAM_inst' of component 'RAM' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'RAM' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/RAM.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (12#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/RAM.vhd:42]
+INFO: [Synth 8-3491] module 'Output_Register' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Output_Register.vhd:27' bound to instance 'Port_a_Out_inst' of component 'Output_Register' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'Output_Register' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Output_Register.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Output_Register' (13#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Output_Register.vhd:42]
+INFO: [Synth 8-3491] module 'Output_Register' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Output_Register.vhd:27' bound to instance 'Port_b_Out_inst' of component 'Output_Register' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd:162]
+INFO: [Synth 8-3491] module 'Address_Decode' declared at 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Address_Decode.vhd:27' bound to instance 'Add_Dec_inst' of component 'Address_Decode' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'Address_Decode' [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Address_Decode.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Address_Decode' (14#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Address_Decode.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'nanoControleur' (15#1) [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1191.316 ; gain = 65.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:26 . Memory (MB): peak = 1191.316 ; gain = 65.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:26 . Memory (MB): peak = 1191.316 ; gain = 65.852
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1191.316 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk_i' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc:63]
+Finished Parsing XDC File [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nanoControleur_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nanoControleur_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1312.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1312.039 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:44 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:45 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:45 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Sequenceur'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  sreset |                             0001 |                               00
+                sir_load |                             0010 |                               01
+              sir_decode |                             0100 |                               10
+          sopcode_decode |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Sequenceur'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:55 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 2     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit	(32 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   14 Bit        Muxes := 1     
+	   4 Input   14 Bit        Muxes := 1     
+	  11 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 5     
+	   4 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	  12 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:01:12 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++---------------+----------------------+-----------+----------------------+---------------+
+|Module Name    | RTL Object           | Inference | Size (Depth x Width) | Primitives    | 
++---------------+----------------------+-----------+----------------------+---------------+
+|nanoControleur | RAM_inst/blocRAM_reg | Implied   | 32 x 8               | RAM32X1S x 8	 | 
++---------------+----------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++---------------+----------------------+-----------+----------------------+---------------+
+|Module Name    | RTL Object           | Inference | Size (Depth x Width) | Primitives    | 
++---------------+----------------------+-----------+----------------------+---------------+
+|nanoControleur | RAM_inst/blocRAM_reg | Implied   | 32 x 8               | RAM32X1S x 8	 | 
++---------------+----------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:01:21 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |LUT1     |     1|
+|3     |LUT2     |     4|
+|4     |LUT3     |     5|
+|5     |LUT4     |     8|
+|6     |LUT5     |     6|
+|7     |LUT6     |    19|
+|8     |RAM32X1S |     8|
+|9     |FDCE     |    50|
+|10    |FDPE     |     1|
+|11    |IBUF     |    18|
+|12    |OBUF     |    16|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1312.039 ; gain = 186.574
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1312.039 ; gain = 65.852
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1312.039 ; gain = 186.574
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1321.383 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1321.383 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  RAM32X1S => RAM32X1S (RAMS32): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:01:52 . Memory (MB): peak = 1321.383 ; gain = 195.918
+INFO: [Common 17-1381] The checkpoint 'P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.runs/synth_1/nanoControleur.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1321.383 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file nanoControleur_utilization_synth.rpt -pb nanoControleur_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  2 18:33:34 2024...

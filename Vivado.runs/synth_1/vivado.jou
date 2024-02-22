@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan  2 18:31:25 2024
+# Process ID: 79380
+# Current directory: P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.runs/synth_1
+# Command line: vivado.exe -log nanoControleur.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nanoControleur.tcl
+# Log file: P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.runs/synth_1/nanoControleur.vds
+# Journal file: P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source nanoControleur.tcl -notrace
