@@ -85,6 +85,7 @@
 !*.txt
 !*.vdi
 !*.tex
+!*.drawio
 #########
 #C-files
 #########
