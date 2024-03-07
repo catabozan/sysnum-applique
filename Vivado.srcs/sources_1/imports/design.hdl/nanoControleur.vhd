@@ -123,7 +123,7 @@ begin
       IR_i      => loc_ir,
       addr_o    => loc_addr_o,
       data_i    => loc_data_i,
-      data_o    => loc_data_o, -- todo: from here
+      data_o    => loc_data_o,
       data_wr_o => loc_wr);
 
   ROM_inst: ROM
