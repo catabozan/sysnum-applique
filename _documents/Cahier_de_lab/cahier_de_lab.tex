@@ -63,6 +63,33 @@
             \item \underline{Cătălin:} J'ai fini le schéma d'états pour le sequenceur
         \end{enumerate}
         Nous avons travaillé pendant environ 2 heures et demie, et les tâches ont été réparties comme suit.
+        \item \textbf{15.03.2024:} \\
+        Après avoir réalisé le schéma, on obtient le tableau suivant pour la machine à états:
+        \begin{center}
+            \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                État & PC\_load\_i & IR\_load\_i & data\_wr\_o & reset\_i \\
+                \hline
+                \hline sRESET & '-' & '-' & '-' & '0' \\
+                \hline sIR\_LOAD a & '0' & '0' & '1' & '1' \\
+                \hline sIR\_DECODE & '0' & '1' & '0' & '1' \\
+                \hline sOPCODE\_DECDE & '1' & '0' & '0' & '1' \\
+                \hline
+            \end{tabular}
+        \end{center}
+        Pour la memory map, on a analysé Address\_Decode.vhd et RAM.vhd, et on obtient le tableau suivant:
+        \begin{center}
+            \begin{tabular}{|c|c|c|}
+                \hline
+                Application & première adresse & dernière adresse \\
+                \hline
+                \hline RAM adresses & 0xe0 & 0xff \\
+                \hline Port a & 0x10 & - \\
+                \hline Port b & 0x11 & - \\
+                \hline
+            \end{tabular}
+        \end{center}
+        Aujourd'hui, on a travaillé ensemble pendant environ une demi-heure.
     \end{itemize}
     \subsection{Checklist}
     \begin{center}
@@ -73,8 +100,8 @@
             \hline 1 & x &   & x \\ 
             \hline 2 & x & x &   \\
             \hline 3 & x & x &   \\
-            \hline 4 &   &   &   \\
-            \hline 5 &   &   &   \\
+            \hline 4 & x & x & x \\
+            \hline 5 & x & x & x \\
             \hline
         \end{tabular}
     \end{center}
