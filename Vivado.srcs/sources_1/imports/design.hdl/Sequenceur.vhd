@@ -75,7 +75,7 @@ begin
         state <= sIR_LOAD;
 
       when others =>
-        -- Erreur, état non prévus. Reset du séquenceur
+        -- Erreur, ï¿½tat non prï¿½vus. Reset du sï¿½quenceur
        	state       <= sRESET;
       
     end case;
@@ -84,7 +84,7 @@ begin
   
 end process;
 
---ASSIGNATION COMBINATOIRE DES SORTIE EN FONCTION DE L'ETAT (STATE) et pour certaines sorties des entrées
+--ASSIGNATION COMBINATOIRE DES SORTIE EN FONCTION DE L'ETAT (STATE) et pour certaines sorties des entrï¿½es
 
 PC_load_o <= '1' WHEN state = sOPCODE_DECODE ELSE '0';
 
@@ -149,9 +149,9 @@ end process;
 P3:process(state,opcode_i)
 begin
 	if state = sIR_DECODE then	
-       -- sélection des opérandes en fonction de l'opcode
+       -- sï¿½lection des opï¿½randes en fonction de l'opcode
         case opcode_i is
-          -- 1 opérande
+          -- 1 opï¿½rande
           when ROLaccu   | RORaccu |
                INCaccu   | 
                DECaccu   | 
@@ -168,7 +168,7 @@ begin
                NEGaddr    =>
             oper_sel_o <= MUX_DATA;
             
-          -- 2 opérandes
+          -- 2 opï¿½randes
        	  when ANDconst | ORconst   | XORconst |
                ADDconst | ADCconst  =>
             oper_sel_o <= MUX_ACCU_CONST;
@@ -238,12 +238,5 @@ begin
 	   CCR_load_o <= '0';
 	end if;
 end process;
-	         
-
-
-
-
-
-
 
 end architecture Behavioral ; -- of Sequenceur
