@@ -42,11 +42,29 @@ begin
 
 
 with pc_i select
-  ir_o <= --début du programme en adresse 0      
-          --mnémonique opérande  adresse    
+  ir_o <= --dï¿½but du programme en adresse 0      
+          --mnï¿½monique opï¿½rande  adresse    
          LOADaddr 	& X"10" when	X"00",  -- Accu = port a
-         STOREaddr 	& X"11" when	X"01",  -- port b = Accu
-         BRA       	& X"00" when	X"02",  -- saut à 00                    
+         STOREaddr 	& X"E0" when	X"01",  -- port a => E0 ram
+         LOADaddr 	& X"11" when	X"02",  -- Accu = port b
+         STOREaddr 	& X"E1" when	X"03",  -- port b => E1 ram
+         BZ1        & X"20" when    X"04",  -- branch if Z = 1
+
+         XORaddr    & X"E0" when    X"05",  -- accu = accur xor E0
+         STOREaddr  & X"10" when    X"06",   -- a < = accu
+         LOADconst  & X"0C" when    X"07",
+         STOREaddr  & X"11" when    X"08",
+         BRA       	& X"00" when	  X"09",  -- saut ï¿½ 00   
+
+         LOADaddr 	& X"10" when	X"20",  -- Accu = port a
+         STOREaddr  & X"10" when    X"21",
+         RORaccu    & X"00" when    X"22",    -- rotate right 4 times
+         RORaccu    & X"00" when    X"23",
+         RORaccu    & X"00" when    X"24",
+         RORaccu    & X"00" when    X"25",
+         STOREaddr  & X"11" when    X"26", -- show on 7seg
+         BRA       	& X"00" when    X"27",  -- saut ï¿½ 00    
+
          BRA		& X"FF" when 	others;  
           
 

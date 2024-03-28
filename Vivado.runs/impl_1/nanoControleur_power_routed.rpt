@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Tue Jan  2 18:35:56 2024
-| Host             : NB21-B0I-YME running 64-bit major release  (build 9200)
+| Date             : Thu Mar 28 11:28:46 2024
+| Host             : cata_b_pc running 64-bit major release  (build 9200)
 | Command          : report_power -file nanoControleur_power_routed.rpt -pb nanoControleur_power_summary_routed.pb -rpx nanoControleur_power_routed.rpx
 | Design           : nanoControleur
 | Device           : xc7a35tfgg484-1
@@ -53,13 +53,14 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.000 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |      106 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |       35 |     20800 |            0.17 |
+| Slice Logic              |    <0.001 |      262 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |      156 |     20800 |            0.75 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   LUT as Distributed RAM |    <0.001 |        8 |      9600 |            0.08 |
-|   Register               |    <0.001 |       51 |     41600 |            0.12 |
-|   Others                 |     0.000 |        3 |       --- |             --- |
-| Signals                  |    <0.001 |       97 |       --- |             --- |
+|   Register               |    <0.001 |       66 |     41600 |            0.16 |
+|   LUT as Distributed RAM |     0.000 |        8 |      9600 |            0.08 |
+|   CARRY4                 |     0.000 |        2 |      8150 |            0.02 |
+|   Others                 |     0.000 |        4 |       --- |             --- |
+| Signals                  |    <0.001 |      232 |       --- |             --- |
 | I/O                      |    <0.001 |       34 |       250 |           13.60 |
 | Static Power             |     0.068 |          |           |                 |
 | Total                    |     0.069 |          |           |                 |

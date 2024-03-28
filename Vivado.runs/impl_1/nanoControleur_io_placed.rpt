@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date                      : Tue Jan  2 18:35:06 2024
-| Host                      : NB21-B0I-YME running 64-bit major release  (build 9200)
+| Date                      : Thu Mar 28 11:28:28 2024
+| Host                      : cata_b_pc running 64-bit major release  (build 9200)
 | Command                   : report_io -file nanoControleur_io_placed.rpt
 | Design                    : nanoControleur
 | Device                    : xc7a35t

@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Jan  2 18:34:48 2024
-| Host         : NB21-B0I-YME running 64-bit major release  (build 9200)
+| Date         : Thu Mar 28 11:28:26 2024
+| Host         : cata_b_pc running 64-bit major release  (build 9200)
 | Command      : report_drc -file nanoControleur_drc_opted.rpt -pb nanoControleur_drc_opted.pb -rpx nanoControleur_drc_opted.rpx
 | Design       : nanoControleur
 | Device       : xc7a35tfgg484-1

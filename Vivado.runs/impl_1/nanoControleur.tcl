@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.runs/impl_1/nanoControleur.tcl"
+  variable script "C:/sysnum-applique/Vivado.runs/impl_1/nanoControleur.tcl"
   variable category "vivado_impl"
 }
 
@@ -130,15 +130,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.cache/wt [current_project]
-  set_property parent.project_path P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.xpr [current_project]
-  set_property ip_output_repo P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/sysnum-applique/Vivado.cache/wt [current_project]
+  set_property parent.project_path C:/sysnum-applique/Vivado.xpr [current_project]
+  set_property ip_output_repo C:/sysnum-applique/Vivado.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.runs/synth_1/nanoControleur.dcp
+  add_files -quiet C:/sysnum-applique/Vivado.runs/synth_1/nanoControleur.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc
+  read_xdc C:/sysnum-applique/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

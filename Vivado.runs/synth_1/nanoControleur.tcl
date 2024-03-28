@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.runs/synth_1/nanoControleur.tcl"
+  variable script "C:/sysnum-applique/Vivado.runs/synth_1/nanoControleur.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,31 +78,31 @@ create_project -in_memory -part xc7a35tfgg484-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.cache/wt [current_project]
-set_property parent.project_path P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.xpr [current_project]
+set_property webtalk.parent_dir C:/sysnum-applique/Vivado.cache/wt [current_project]
+set_property parent.project_path C:/sysnum-applique/Vivado.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo p:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.cache/ip [current_project]
+set_property ip_output_repo c:/sysnum-applique/Vivado.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur_package.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/ALU.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Address_Decode.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Data_Multiplexer.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Instruction_Register.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Operandes_Multiplexer.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Operandes_Register.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Output_Register.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Program_Counter.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/RAM.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/ROM.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Sequenceur.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/Status_Register.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/W_Register.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd
-  P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur_package.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/ALU.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/Address_Decode.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/Data_Multiplexer.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/Instruction_Register.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/Operandes_Multiplexer.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/Operandes_Register.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/Output_Register.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/Program_Counter.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/RAM.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/ROM.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/Sequenceur.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/Status_Register.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/W_Register.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd
+  C:/sysnum-applique/Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -113,8 +113,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc
-set_property used_in_implementation false [get_files P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/ProfEtudiants/Vivado/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc]
+read_xdc C:/sysnum-applique/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc
+set_property used_in_implementation false [get_files C:/sysnum-applique/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
